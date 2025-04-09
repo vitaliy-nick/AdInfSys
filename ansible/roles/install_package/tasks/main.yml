@@ -1,0 +1,13 @@
+---
+- name: Install package on Debian systems (Ubuntu)
+  apt:
+    name: "{{ package_name }}"
+    state: present
+    update_cache: yes
+  when: ansible_os_family == "Debian"
+
+- name: Install package on RedHat systems (Fedora)
+  dnf:
+    name: "{{ package_name }}"
+    state: present
+  when: ansible_os_family == "RedHat"

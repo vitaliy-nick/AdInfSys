@@ -1,2 +1,3 @@
 [lab_hosts]
-remote_host ansible_host=192.168.1.12 ansible_user=vitaliy ansible_ssh_private_key_file=~/.ssh/id_rsa
+ansible_virtual-machine ansible_host=192.168.1.171 ansible_user=vitaliy
+fedora_VM ansible_host=192.168.1.13 ansible_user=pavlusv

@@ -2,4 +2,5 @@
 - hosts: lab_hosts
   become: yes
   roles:
-    - change_hostname
+#   - change_hostname
+    - install_package
